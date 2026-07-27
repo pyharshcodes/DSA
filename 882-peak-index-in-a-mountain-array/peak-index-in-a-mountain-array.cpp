@@ -1,7 +1,7 @@
 class Solution {
 public:
     int peakIndexInMountainArray(vector<int>& n) {
-        int st=1, end=n.size()-1;
+        int st=1, end=n.size()-2;
         while(st<=end){
             int mid=st+(end-st)/2;
             if (n[mid-1]<n[mid]&&n[mid]>n[mid+1]){
